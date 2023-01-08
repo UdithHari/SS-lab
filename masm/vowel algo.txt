@@ -1,0 +1,21 @@
+ALGORITHM:
+1. Initialize DS-register.
+2. Set SI as pointer for input string.
+3. Display the message "ENTER THE STRING. INPUT STRING =" using the macro-DISP.
+4. Let CX-register be used as counter for number of bytes in the input string. Initialize count as zero.
+5. Load the effective address of input string.
+6. Enter the string using OAH, INT21H.
+7. Store the length of string in CX register.
+8. Initialize the BX register with zero for vowel count.
+9. Store the starting address of input string in S! register.
+10. Move the contents of SI register to AL register.
+11. Compare the contents of AL register with zero.
+12. Jump to step 19 if equal.
+13. Compare the contents of AL register with vowel symbols.
+14. Jump to step 17 if equal.
+15. Increment SI, Decrement CX.
+16. Jump to step 10.
+17. Increment BX, SI, Decrement CX.
+18. Jump to step 10.
+19. Print the count of the vowels.
+20. End the program 

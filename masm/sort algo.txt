@@ -1,0 +1,17 @@
+ALGORITHM:
+1. Set Sl-register as pointer for array.
+2. Set CL-register as count for N-1 repetitions.
+3. Initialize array pointer.
+4. Set CH as count for N-1 comparison.
+5. Increment the array pointer.
+6. Get an element of array in AL-register.
+7. Increment the array pointer.
+8. Compare the next element of the array with AL.
+9. Check carry flag. If carry flag is set then go to step 12, otherwise go to next step.
+10. Exchange the content of memory pointed by SI and the content of previous memory location. (For this, exchange
+AL and memory pointed by SI, and then exchange AL and memory pointed by SI-1.)
+11. Decrement the count for comparisons (CH-register).
+12. Check zero flag. If zero flag is reset then go to step 6, otherwise go to next step.
+13. Decrement the count for repetitions (CL-register).
+14. Check zero flag. If zero flag is reset then go to step 3, otherwise go to next step.
+15. Stop

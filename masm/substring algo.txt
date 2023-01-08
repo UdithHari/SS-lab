@@ -1,0 +1,33 @@
+ALGORITHM:
+1. Initialize DS-register.
+2. Display the massage “ENTER THE STRING, INPUT STRING =" using the macro-DISP.
+3. Enter the Input string(stet) using 0AH, INT21H,
+4. Display the message “Substring to be replaced:” using macro-DISP.
+5. Enter the substring(str2) using 0AH, INT21H,
+6. Display the message “Replace with?” using macro-DISP.
+7. Enter the replace string(str3) with 0AH, INT21H.
+8. Load the address of str 1 in SI, str2 in DI.
+9. Store length of str1 to CX register.
+10. Store length of str2 to BX register.
+11. Move contents of SI to AL.
+12. Move contents of DI to AH.
+13. Compare AL and AH.
+14. Jump to step 15.
+15. Decrement BX.
+16. Push SI and CX to stack.
+17. Increment Si and Dl.
+18. Compare BX register with zero.
+19. Jump to step 22 if zero.
+20. Decrement CX register.
+21. Jump to step 11 if CX not zero.
+22. Load the address of str3 in Dl.
+23. Store length if str3 to BX register.
+24. Move content of Dl to DL register.
+25. Output the character one by one.
+26. Increment Dl and Decrement BX.
+27. Jump to step 24 if BX not zero,
+28. Load the address of str2 in Dl.
+29. Store the length of str2 to BX register,
+30. Push SI and CX.
+31. Jump to step 11.
+32. Terminate the program, 

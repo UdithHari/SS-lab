@@ -1,0 +1,18 @@
+ALGORITHM:
+1. Start
+2. Initialize the memory areas and two pointers and a counter.
+3. Display message “Enter Any string “.
+4. Accept the string, store it in a reserved area, consider P11.
+5. Display message “Entered string is” and display P11
+6. Display “Length of String” and echo it.
+7. Pointer 1 pointing to area 1: while pointer 2 pointing to area 2.
+8. Set the pointer 1 to first character of string and pointer 2 points to the last character of same string.
+9. Set the value of each point to SI and AL respectively which stores in P22
+10. Increment pointer 1 by 1 and decrement pointer 2 by one
+11. Display “Reversed String is:” with P22
+12. Check if palindrome. Compare the string with reversed string
+a. If zero
+i. Display message “The given string is palindrome” using macro disp
+b. Else
+i. Display message “No, the given string is not palindrome” using macro disp
+13. Stop 
